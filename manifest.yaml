@@ -28,6 +28,22 @@
         - "devel"
   icon: R-minimal.png
   ssh_supported: true
+- folder: R-shiny-dashboard
+  name: R
+  description: An R shiny dashboard Renku project.
+  variables: 
+    R_version: 
+      description: Set the R version.
+      default_value: "4.2.0"
+      type: enum
+      enum: 
+        - "4.1.0"
+        - "4.1.1"
+        - "4.1.2"
+        - "4.2.0"
+        - "devel"
+  icon: R-shiny-dashboard.png
+  ssh_supported: true
 - folder: bioc-minimal
   name: Bioconductor
   description: An R-Bioconductor Renku project.
