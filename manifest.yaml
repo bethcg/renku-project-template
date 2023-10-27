@@ -29,7 +29,7 @@
   icon: R-minimal.png
   ssh_supported: true
 - folder: R-shiny-dashboard
-  name: R
+  name: R Shiny Dashboard
   description: An R shiny dashboard Renku project.
   variables: 
     R_version: 
