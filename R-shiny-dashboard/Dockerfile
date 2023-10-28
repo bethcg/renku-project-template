@@ -34,12 +34,9 @@ FROM renku/renkulab-r:{{ R_version | default("4.2.0") }}-0.18.1
 # e.g. the following installs apt-utils and vim; each pkg on its own line, all lines
 # except for the last end with backslash '\' to continue the RUN line
 #
-# USER root
-# RUN apt-get update && \
-#    apt-get install -y --no-install-recommends \
-#    apt-utils \
-#    vim
-# USER ${NB_USER}
+USER root
+RUN /rocker_scripts/install_shiny_server.sh
+USER ${NB_USER}
 
 # install the R dependencies
 COPY install.R /tmp/
@@ -52,4 +49,3 @@ RUN pip3 install -r /tmp/requirements.txt --no-cache-dir && \
 
 COPY --from=builder ${HOME}/.renku/venv ${HOME}/.renku/venv
 
-RUN /rocker_scripts/install_shiny_server.sh
