@@ -49,3 +49,5 @@ RUN pip3 install -r /tmp/requirements.txt --no-cache-dir && \
 
 COPY --from=builder ${HOME}/.renku/venv ${HOME}/.renku/venv
 
+RUN renku config set interactive.default_url "/shiny"
+
