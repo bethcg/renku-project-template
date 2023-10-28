@@ -7,4 +7,4 @@
 
 **Press the Start button below to access the R Shiny dashboard.**
 
-[![Start button]([start.png](https://zeroheight.com/7c23c970c/p/952a6a-buttons/b/010678/i/186072234) "Start button")](https://renkulab.io/projects/{{ __project_slug__ }}/sessions/new?autostart=1)
+[![Start button](https://oceanic-wrinkle-b11.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F9a466f24-21ee-4c22-8a63-fe6c372dfb93%2F0bd036a6-bdf6-4e1e-86cc-ebae806ad836%2Fstart2.png?table=block&id=881e5e60-dfb4-4553-b7a4-908480a3484b&spaceId=9a466f24-21ee-4c22-8a63-fe6c372dfb93&width=2000&userId=&cache=v2)](https://renkulab.io/projects/{{ __project_slug__ }}/sessions/new?autostart=1)
