@@ -7,4 +7,4 @@
 
 **Press the Start button below to access the R Shiny dashboard.**
 
-[![Start button](http://www.clker.com/cliparts/7/I/m/y/o/p/start-button-th.png "Start button")](https://renkulab.io/projects/{{ __project_slug__ }})
+[![Start button](http://www.clker.com/cliparts/7/I/m/y/o/p/start-button-th.png "Start button")](https://renkulab.io/projects/{{ __project_slug__ }}/sessions/new?autostart=1)
