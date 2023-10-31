@@ -3,7 +3,6 @@
 {{ __project_description__ }}
 {% endif %}
 
-# R Shiny dashboard
 
 **Press the Start button below to access the R Shiny dashboard.**
 
