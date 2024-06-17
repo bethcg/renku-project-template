@@ -1,1 +1,3 @@
-shiny::run_app()
+#shiny::run_app()
+library(shiny)
+runApp("app")
