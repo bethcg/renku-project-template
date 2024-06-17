@@ -30,8 +30,11 @@ FROM renku/renkulab-r:{{ R_version | default("4.2.0") }}-0.18.1
 # Uncomment and adapt if code is to be included in the image
 # COPY src /code/src
 
-RUN curl -LO https://quarto.org/download/latest/quarto-linux-amd64.deb
+ARG QUARTO_VERSION="0.9.522"
+RUN curl -o quarto-linux-amd64.deb -L https://github.com/quarto-dev/quarto-cli/releases/download/v${QUARTO_VERSION}/quarto-${QUARTO_VERSION}-linux-amd64.deb
 RUN gdebi --non-interactive quarto-linux-amd64.deb
+RUN dpkg -i quarto-linux-amd64.deb && rm quarto-linux-amd64.deb
+RUN quarto install tinytex --no-prompt
 
 # Uncomment and adapt if your R or python packages require extra linux (ubuntu) software
 # e.g. the following installs apt-utils and vim; each pkg on its own line, all lines
