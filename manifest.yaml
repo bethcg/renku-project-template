@@ -1,4 +1,4 @@
-- folder: python-minimal
+- id: python-minimal
   name: Python
   description: A Python Renku project.
   variables: 
@@ -12,7 +12,7 @@
         - "3.10"
   icon: python-minimal.png
   ssh_supported: true
-- folder: R-minimal
+- id: R-minimal
   name: R
   description: An R Renku project.
   variables: 
@@ -28,7 +28,7 @@
         - "devel"
   icon: R-minimal.png
   ssh_supported: true
-- folder: bioc-minimal
+- id: bioc-minimal
   name: Bioconductor
   description: An R-Bioconductor Renku project.
   variables:
@@ -44,7 +44,7 @@
         - "devel"
   icon: bioconductor.png
   ssh_supported: true
-- folder: julia-minimal
+- id: julia-minimal
   name: Julia
   description: A Julia Renku project.
   variables:
@@ -58,12 +58,12 @@
         - "1.9.0"
   icon: julialang.png
   ssh_supported: true
-- folder: minimal
+- id: minimal
   name: Minimal Renku
   description: The simplest Renku project template with files for Renku CLI and launching projects on RenkuLab.
   variables: {}
   ssh_supported: true
-- folder: pinned-image
+- id: pinned-image
   name: Pinned image
   description: A Renku project with Python and a pinned image
   variables: 
@@ -76,7 +76,7 @@
         - "3.9"
         - "3.10"
   ssh_supported: true
-- folder: R-quarto
+- id: R-quarto
   name: R-quarto
   description: An R Renku project with quarto.
   variables: 
